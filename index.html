@@ -5,10 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .div1{
+            border:1px solid black;
+            height: 50%;
+            width: 50%;
+            background: skyblue;
+            position: relative;
+
+        }
+    </style>
 </head>
 <body>
-    <form action="post">
+    <div class="div1">
+        <form action="post" align="center" >
+           
+            
+            <p><label for="uname"> UserI'd :</label><input type="text" id="uname" placeholder="Enetr your name" name="uname" >
+            </p>
+            <p>
+                <label for="pswd"> Password:</label> <input type="password" id="pswd" name="pswd" placeholder="Password">
+            </p>
+            <p>
+                <input type="button" value="login">
+                <input type="reset" value="reset">
+            </p>
+            <p></p>
+         </form>
+    </div>
         
-    </form>
+    
+   
 </body>
 </html>

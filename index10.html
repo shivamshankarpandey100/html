@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            height: 400px;
+            width: 800px;
+            border: 1px solid black;
+            display:flex;
+        }
+        #box1{
+            height: 400px;
+            width: 200px;
+            border: 1px solid black;
+            background-color: red;
+        }
+        #box2{
+            height: 400px;
+            width: 200px;
+            border: 1px solid black;
+            background-color: green;
+        }
+        #box3{
+            height: 400px;
+            width: 200px;
+            border: 1px solid black;
+            background-color:blue;
+        }
+        #box4{
+            height: 400px;
+            width: 200px;
+            border: 1px solid black;
+            background-color:yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="box1" onclick="one()"></div>
+        <div id="box2" onclick="two()"></div>
+        <div id="box3" onclick="three()"></div>
+        <div id="box4" onmouseover="four()"></div>
+    </div>
+    <script>
+        function one(){
+            document.getElementById("box1").style.backgroundColor="white";
+        }
+        function two(){
+            document.getElementById("box2").style.backgroundColor="white";
+        }
+        function three(){
+            document.getElementById("box3").style.backgroundColor="white";
+        }
+        function four(){
+            document.getElementById("box4").style.backgroundColor="white";
+        }
+    </script>
+</body>
+</html>

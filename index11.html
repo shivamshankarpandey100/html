@@ -1,1 +1,47 @@
-h
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Single Page Web App</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+    #content {
+        display: none;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Single Page Web App</h1>
+</header>
+<div class="container">
+    <button onclick="showContent()">Show Content</button>
+    <div id="content">
+        <h2>Welcome to My Web Page!</h2>
+        <p>This is a simple example of a single-page web app.</p>
+    </div>
+</div>
+<script>
+    function showContent() {
+        document.getElementById("content").style.display = "block";
+    }
+</script>
+</body>
+</html>
